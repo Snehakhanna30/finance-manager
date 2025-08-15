@@ -45,6 +45,26 @@ npm start
 Backend will run on http://localhost:8080
 Frontend will run on http://localhost:3000
 
+
+#MySQL Database Setup
+
+MySQL install & run karo.
+
+MySQL CLI or phpMyAdmin open karo.
+
+New database create karo:
+
+CREATE DATABASE finance_manager;
+
+
+Database credentials backend/src/main/resources/application.properties me set karo:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/finance_manager
+spring.datasource.username=your_mysql_username
+spring.datasource.password=your_mysql_password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
 🤝 Contributing
 
 
